@@ -1,6 +1,7 @@
 ---
-id: Get Supported File Formats
+id: get_supported_file_formats
 title: Get Supported File Formats
+custom_edit_url: https://github.com/bobkovalex/groupdocs_docs/blob/master/docs/get_supported_file_formats.md
 ---
 
 ## Get supported file formats

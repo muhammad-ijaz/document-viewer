@@ -1,27 +1,27 @@
 {
   "docs": {
     "Getting Started": [
-    	"Product Overview",
-		"Features Overview",
-		"Supported Document Formats",
-		"Supported Platforms"
+    	"product_overview",
+		"features_overview",
+		"supported_document_formats",
+		"supported_platforms"
     ],
     "Developer Guide": [
 		{
 	        "type": "subcategory",
 	        "label": "Common",
 	        "ids": [
-	          "Get File Information",
-	          "Get Supported File Formats"
+	          "get_file_information",
+	          "get_supported_file_formats"
 	        ]
 		},
 		{
 	        "type": "subcategory",
 	        "label": "Quick Start",
 	        "ids": [
-	          "HTML Viewer",
-	          "HTML Viewer - Exclude Fonts",
-	          "HTML Viewer - Minify HTML",
+	          "html_viewer",
+	          "html_viewer-exclude_fonts",
+	          "html_viewer-minify_html",
 	          "image_viewer"
 	        ]
 		}

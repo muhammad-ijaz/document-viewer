@@ -1,6 +1,7 @@
 ---
-id: Get File Information
+id: get_file_information
 title: Get File Information
+custom_edit_url: https://github.com/bobkovalex/groupdocs_docs/blob/master/docs/get_file_information.md
 ---
 
 ## Get file information

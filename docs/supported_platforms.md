@@ -1,6 +1,7 @@
 ---
-id: Supported Platforms
+id: supported_platforms
 title: Supported Platforms
+custom_edit_url: https://github.com/bobkovalex/groupdocs_docs/blob/master/docs/supported_platforms.md
 ---
 
 GroupDocs.Viewer for .NET supported platforms are listed below. For more platform support please check GroupDocs.Viewer for Java.

@@ -2,6 +2,7 @@
 id: image_viewer
 title: Document Viewer - Image Viewer
 sidebar_label: Image Viewer
+custom_edit_url: https://github.com/bobkovalex/groupdocs_docs/blob/master/docs/image_viewer.md
 ---
 
 ## Document viewer - Image Viewer

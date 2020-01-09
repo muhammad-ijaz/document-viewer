@@ -1,6 +1,7 @@
 ---
-id: Features Overview
+id: features_overview
 title: Features Overview
+custom_edit_url: https://github.com/bobkovalex/groupdocs_docs/blob/master/docs/features_overview.md
 ---
 
 ## Document viewer

@@ -1,6 +1,7 @@
 ---
-id: Supported Document Formats
+id: supported_document_formats
 title: Supported Document Formats
+custom_edit_url: https://github.com/bobkovalex/groupdocs_docs/blob/master/docs/supported_document_formats.md
 ---
 
 ## Supported File Formats

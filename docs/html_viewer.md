@@ -1,7 +1,8 @@
 ---
-id: HTML Viewer
+id: html_viewer
 title: Document Viewer - HTML Viewer
 sidebar_label: HTML Viewer
+custom_edit_url: https://github.com/bobkovalex/groupdocs_docs/blob/master/docs/html_viewer.md
 ---
 
 ## Document viewer - HTML Viewer

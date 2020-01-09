@@ -1,6 +1,7 @@
 ---
-id: HTML Viewer - Minify HTML
+id: html_viewer-minify_html
 title: HTML Viewer - Minify HTML
+custom_edit_url: https://github.com/bobkovalex/groupdocs_docs/blob/master/docs/html_viewer-minify_html.md
 ---
 
 ## HTML Viewer - Minify HTML

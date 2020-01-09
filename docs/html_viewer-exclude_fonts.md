@@ -1,6 +1,7 @@
 ---
-id: HTML Viewer - Exclude Fonts
+id: html_viewer-exclude_fonts
 title: HTML Viewer - Exclude Fonts
+custom_edit_url: https://github.com/bobkovalex/groupdocs_docs/blob/master/docs/html_viewer-exclude_fonts.md
 ---
 
 ## HTML Viewer - Exclude fonts
