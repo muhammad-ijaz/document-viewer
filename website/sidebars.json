@@ -1,0 +1,30 @@
+{
+  "docs": {
+    "Getting Started": [
+    	"Product Overview",
+		"Features Overview",
+		"Supported Document Formats",
+		"Supported Platforms"
+    ],
+    "Developer Guide": [
+		{
+	        "type": "subcategory",
+	        "label": "Common",
+	        "ids": [
+	          "Get File Information",
+	          "Get Supported File Formats"
+	        ]
+		},
+		{
+	        "type": "subcategory",
+	        "label": "Quick Start",
+	        "ids": [
+	          "HTML Viewer",
+	          "HTML Viewer - Exclude Fonts",
+	          "HTML Viewer - Minify HTML",
+	          "image_viewer"
+	        ]
+		}
+    ]
+  }
+}
