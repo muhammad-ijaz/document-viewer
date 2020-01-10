@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Document Viewer - HTML Viewer · GroupDocs</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## Document viewer - HTML Viewer"/><meta name="docsearch:version" content="19.12.0"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Document Viewer - HTML Viewer · GroupDocs"/><meta property="og:type" content="website"/><meta property="og:url" content="https://bobkovalex.github.io/document-viewer//document-viewer/"/><meta property="og:description" content="## Document viewer - HTML Viewer"/><meta property="og:image" content="https://bobkovalex.github.io/document-viewer//document-viewer/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://bobkovalex.github.io/document-viewer//document-viewer/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/document-viewer/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="stylesheet" href="/document-viewer/css/code-block-buttons.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="/document-viewer/js/code-block-buttons.js"></script><script src="/document-viewer/js/scrollSpy.js"></script><link rel="stylesheet" href="/document-viewer/css/main.css"/><script src="/document-viewer/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/document-viewer/"><img class="logo" src="/document-viewer/img/groupdocs-logo.png" alt="GroupDocs"/><h2 class="headerTitleWithLogo">GroupDocs</h2></a><a href="/document-viewer/versions"><h3>19.12.0</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/document-viewer/docs/19.12.0/product_overview" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Quick Start</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Getting Started<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/document-viewer/docs/19.12.0/product_overview">Product Overview</a></li><li class="navListItem"><a class="navItem" href="/document-viewer/docs/19.12.0/features_overview">Features Overview</a></li><li class="navListItem"><a class="navItem" href="/document-viewer/docs/19.12.0/supported_document_formats">Supported Document Formats</a></li><li class="navListItem"><a class="navItem" href="/document-viewer/docs/19.12.0/supported_platforms">Supported Platforms</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Developer Guide<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Common</h4><ul><li class="navListItem"><a class="navItem" href="/document-viewer/docs/19.12.0/get_file_information">Get File Information</a></li><li class="navListItem"><a class="navItem" href="/document-viewer/docs/19.12.0/get_supported_file_formats">Get Supported File Formats</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Quick Start</h4><ul><li class="navListItem navListItemActive"><a class="navItem" href="/document-viewer/docs/19.12.0/html_viewer">HTML Viewer</a></li><li class="navListItem"><a class="navItem" href="/document-viewer/docs/19.12.0/html_viewer-exclude_fonts">HTML Viewer - Exclude Fonts</a></li><li class="navListItem"><a class="navItem" href="/document-viewer/docs/19.12.0/html_viewer-minify_html">HTML Viewer - Minify HTML</a></li><li class="navListItem"><a class="navItem" href="/document-viewer/docs/19.12.0/image_viewer">Image Viewer</a></li></ul></div></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/bobkovalex/groupdocs_docs/blob/master/docs/html_viewer.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 id="__docusaurus" class="postHeaderTitle">Document Viewer - HTML Viewer</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="document-viewer---html-viewer"></a><a href="#document-viewer---html-viewer" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Document viewer - HTML Viewer</h2>
+<p>Document viewer can operate in different rendering modes, HTML, Image and PDF (see <a href="https://wiki.lisbon.dynabic.com/display/viewer/Features+Overview">Features Overview</a> for more information).
+This article will describe on how to view documents in HTML mode with HTML Viewer.</p>
+<p>In HTML rendering mode all pages of the source documents are rendered as separate HTML pages.</p>
+<p>For HTML rendering mode following <a href="https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/htmlviewoptions">HtmlViewOptions</a> are available:</p>
+<ul>
+<li><a href="https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/htmlviewoptions/methods/forembeddedresources">HtmlViewOptions.ForEmbeddedResources</a> - all resources such as styles, fonts, and graphics are integrated into an HTML pages.
+<ul>
+<li>Pros: No external files which makes more convenient to save result to a stream.</li>
+<li>Cons: Larger page size and as a result slower loading and rendering of an HTML document in a browser.</li>
+</ul></li>
+<li><a href="https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/htmlviewoptions/methods/forexternalresources">HtmlViewOptions.ForExternalResources</a> - all the resources, such as styles, fonts, and graphics are external.
+<ul>
+<li>Pros: Smaller page size as a page includes only markup and links to external resources. Faster HTML document loading and rendering in a browser as browsers can load multiple external resources simultaneously.</li>
+<li>Cons: External files, since all resources will be stored next to an HTML page or in a specific directory.</li>
+</ul></li>
+</ul>
+<p>With GroupDocs.Viewer for .NET API HTML rendering became simple and intuitive. Just follow these steps:</p>
+<ul>
+<li>Create a new instance of the <a href="https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer">Viewer</a> class and pass the source document path as a constructor parameter.</li>
+<li>Instantiate the <a href="https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/htmlviewoptions">HtmlViewOptions</a> object according to your requirements (for embedded or external HTML resources) and specify saving path format for rendered document pages.</li>
+<li>Call View method of <a href="https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer">Viewer</a> class instance and pass <a href="https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/htmlviewoptions">HtmlViewOptions</a> to it.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="document-viewer---html-viewer-embedded-resources"></a><a href="#document-viewer---html-viewer-embedded-resources" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Document viewer - HTML Viewer (embedded resources)</h2>
+<p>The following code shows how to render document to HTML with embedded resources.</p>
+<pre><code class="hljs css language-CS"><span class="hljs-keyword">using</span> (Viewer viewer = <span class="hljs-keyword">new</span> Viewer(<span class="hljs-string">"sample.docx"</span>))
+{
+   <span class="hljs-comment">// The file path format e.g. 'page_{0}.html'</span>
+   <span class="hljs-keyword">string</span> filePathFormat = <span class="hljs-string">"page-{0}.html"</span>;
+   HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(filePathFormat);
+   viewer.View(options);
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="document-viewer---html-viewer-external-resources"></a><a href="#document-viewer---html-viewer-external-resources" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Document viewer - HTML Viewer (external resources)</h2>
+<p>The following code shows how to render document to HTML with external resources.</p>
+<pre><code class="hljs css language-CS"><span class="hljs-keyword">using</span> (Viewer viewer = <span class="hljs-keyword">new</span> Viewer(<span class="hljs-string">"sample.docx"</span>))
+{
+    <span class="hljs-comment">// The file path format e.g. 'page_{0}.html'</span>
+    <span class="hljs-keyword">string</span> filePathFormat = <span class="hljs-string">"page-{0}.html"</span>;
+    <span class="hljs-comment">// The resource file path format e.g. 'page_{0}_{1}'</span>
+    <span class="hljs-keyword">string</span> resourceFilePathFormat = <span class="hljs-string">"page_{0}_{1}"</span>; 
+    <span class="hljs-comment">// The resource URL format e.g. 'page_{0}_{1}' or "http://contoso.com/page_{0}/resource_{1}"</span>
+    <span class="hljs-keyword">string</span> resourceUrlFormat = <span class="hljs-string">"page_{0}_{1}"</span>;
+ 
+    HtmlViewOptions options = HtmlViewOptions.ForExternalResources(filePathFormat, resourceFilePathFormat, resourceUrlFormat);
+    viewer.View(options);
+}
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/document-viewer/docs/19.12.0/get_supported_file_formats"><span class="arrow-prev">← </span><span>Get Supported File Formats</span></a><a class="docs-next button" href="/document-viewer/docs/19.12.0/html_viewer-exclude_fonts"><span>HTML Viewer - Exclude Fonts</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#document-viewer---html-viewer">Document viewer - HTML Viewer</a></li><li><a href="#document-viewer---html-viewer-embedded-resources">Document viewer - HTML Viewer (embedded resources)</a></li><li><a href="#document-viewer---html-viewer-external-resources">Document viewer - HTML Viewer (external resources)</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/document-viewer/" class="nav-home"><img src="/document-viewer/img/favicon.ico" alt="GroupDocs" width="66" height="58"/></a><div><h5>Docs</h5><a href="/document-viewer/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/document-viewer/docs/en/doc2.html">Guides (or other categories)</a><a href="/document-viewer/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/document-viewer/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/document-viewer/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 Aspose Pty Ltd</section></footer></div></body></html>
