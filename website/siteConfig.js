@@ -21,13 +21,10 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'GroupDocs', // Title for your website.
+  title: 'GroupDocs',
   tagline: 'Professional document manipulation APIs ',
-  url: 'https://bobkovalex.github.io/document-viewer/', // Your website URL
-  baseUrl: '/document-viewer/', // Base URL for your project */
-  // For github.io type URLs, you would set the url and baseUrl like:
-  //   url: 'https://facebook.github.io',
-  //   baseUrl: '/test-site/',
+  url: 'https://bobkovalex.github.io/document-viewer/',
+  baseUrl: '/document-viewer/', 
 
   // Used for publishing and more
   projectName: 'document-viewer',
@@ -36,12 +33,10 @@ const siteConfig = {
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
 
-  // For no header links in the top nav bar -> headerLinks: [],
+  docsHome: 'product_overview',
+  
   headerLinks: [
     {doc: 'product_overview', label: 'Docs'},
-    // {doc: 'doc4', label: 'API'},
-    // {page: 'help', label: 'Help'},
-    // {blog: true, label: 'Blog'},
   ],
 
   // If you have users set above, you add it here:

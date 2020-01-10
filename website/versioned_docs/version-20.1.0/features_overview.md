@@ -1,7 +1,8 @@
 ---
-id: features_overview
+id: version-20.1.0-features_overview
 title: Features Overview
 custom_edit_url: https://github.com/bobkovalex/groupdocs_docs/blob/master/docs/features_overview.md
+original_id: features_overview
 ---
 
 This is version 20.1.0

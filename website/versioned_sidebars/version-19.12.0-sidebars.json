@@ -1,0 +1,30 @@
+{
+  "version-19.12.0-docs": {
+    "Getting Started": [
+      "version-19.12.0-product_overview",
+      "version-19.12.0-features_overview",
+      "version-19.12.0-supported_document_formats",
+      "version-19.12.0-supported_platforms"
+    ],
+    "Developer Guide": [
+      {
+        "type": "subcategory",
+        "label": "Common",
+        "ids": [
+          "version-19.12.0-get_file_information",
+          "version-19.12.0-get_supported_file_formats"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Quick Start",
+        "ids": [
+          "version-19.12.0-html_viewer",
+          "version-19.12.0-html_viewer-exclude_fonts",
+          "version-19.12.0-html_viewer-minify_html",
+          "version-19.12.0-image_viewer"
+        ]
+      }
+    ]
+  }
+}
