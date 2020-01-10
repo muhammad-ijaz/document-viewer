@@ -7,3 +7,4 @@ website/translated_docs
 website/build/
 website/yarn.lock
 website/i18n/*
+website/node_modules/.cache/*
