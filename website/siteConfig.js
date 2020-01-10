@@ -14,8 +14,8 @@ const users = [
     caption: 'User1',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
+    image: '/document-viewer/img/undraw_open_source.svg',
+    infoLink: 'https://www.groupdocs.com',
     pinned: true,
   },
 ];
@@ -84,9 +84,9 @@ const siteConfig = {
   scripts: [
     'https://buttons.github.io/buttons.js',
     'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js',
-    '/js/code-block-buttons.js',
+    '/document-viewer/js/code-block-buttons.js',
   ],
-  stylesheets: ['/css/code-block-buttons.css'],
+  stylesheets: ['/document-viewer/css/code-block-buttons.css'],
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
